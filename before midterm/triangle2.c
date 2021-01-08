@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+    int a,i,j;
+    scanf("%d",&a);
+    for(i=0;i<2*a-1;i++)
+    {
+        if(i<a)
+            for(j=0;j<=i;j++)
+            {
+                printf("*");
+            }
+        else
+            for(j=2*a-1;j>i;j--)
+            {
+                printf("*");
+            }
+        printf("\n");
+    }
+}
